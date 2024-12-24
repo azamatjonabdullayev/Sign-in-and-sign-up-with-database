@@ -11,12 +11,15 @@
         <h1>
             Log in
         </h1>
-        <form action="/create_account" class="form-section">
-            <input type="text" placeholder="Name..." required name="name">
-            <input type="text" name="username" placeholder="Username...">
-            <input type="email" name="email" placeholder="Email...">
-            <input type="password" placeholder="Password" required name="password">
-            <input type="password" placeholder="Confirm Password" required name="confirm_password">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <form action="/create_account" class="form-section" method="post">
+            <input type="text" placeholder="Name..." name="name" required>
+            <input type="text" name="username" placeholder="Username..." required>
+            <input type="email" name="email" placeholder="Email..." required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="password" placeholder="Confirm Password" name="confirm_password" required>
             <h4>Already a member? <a href="/">Sign in</a></h4>
             <button type="submit">Register</button>
         </form>

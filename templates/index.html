@@ -11,7 +11,10 @@
         <h1>
             Log in
         </h1>
-        <form action="/signin" class="form-section">
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <form action="/signin" class="form-section" method="post">
             <input type="text" placeholder="Username..." required name="username">
             <input type="password" placeholder="Password" required name="password">
             <h4>Don't have an account? <a href="/register">Register</a></h4>
