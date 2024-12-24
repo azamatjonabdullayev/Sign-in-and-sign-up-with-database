@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(/static/images/beautiful-night.jpg);
+    background-size: cover;
+}
+
+.main-div{
+    width: 500px;
+    border: 2px solid black;
+    margin: 200px auto;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.main_div h1 {
+    color: red;
+    font-size: 24px;
+}
+
+.form-section input{
+    width: 55%;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.form-section button {
+    width: 280px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    background-color: #ff6f00;
+    color: white;
+}
+
+.form-section button:hover {
+    cursor: pointer;
+}
+
+.form-section a{
+    color: blue;
+    text-decoration: none;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+    color: red;
+}
