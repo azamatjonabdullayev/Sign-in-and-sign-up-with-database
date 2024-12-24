@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/login_style.css')}}">
     <title>Login page</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <form action="/signin" class="form-section">
             <input type="text" placeholder="Username..." required name="username">
             <input type="password" placeholder="Password" required name="password">
-            <h4>Don't have an account? <a href="/login">Register</a></h4>
+            <h4>Don't have an account? <a href="/register">Register</a></h4>
             <button type="submit">Log In</button>
         </form>
     </div>

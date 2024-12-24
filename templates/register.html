@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/login_style.css')}}">
     <title>Register</title>
 </head>
 <body>
-
+    <div class="main-div">
+        <h1>
+            Log in
+        </h1>
+        <form action="/create_account" class="form-section">
+            <input type="text" placeholder="Name..." required name="name">
+            <input type="text" name="username" placeholder="Username...">
+            <input type="email" name="email" placeholder="Email...">
+            <input type="password" placeholder="Password" required name="password">
+            <input type="password" placeholder="Confirm Password" required name="confirm_password">
+            <h4>Already a member? <a href="/">Sign in</a></h4>
+            <button type="submit">Register</button>
+        </form>
+    </div>
 </body>
 </html>
