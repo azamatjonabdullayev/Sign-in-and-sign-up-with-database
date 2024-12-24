@@ -14,9 +14,9 @@ body {
     border: none;
 }
 
-.main_div h1 {
+.main-div h1 {
     color: red;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .form-section input{

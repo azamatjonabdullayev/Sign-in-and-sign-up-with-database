@@ -8,13 +8,23 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+
+
+
 @app.route('/after')
 def after():
     return render_template('after.html')
 
+
+
+
+
 @app.route('/register')
 def register():
     return render_template('register.html')
+
+
+
 
 @app.route('/signin', methods=['POST'])
 def check_user():
@@ -26,7 +36,7 @@ def check_user():
     user = dbc.fetchone()
 
     if user:
-        return redirect(url_for('/after'))
+        return redirect(url_for('after'))
     else:
         error_message = "Bunday foydalanuvchi mavjud emas!"
         return redirect(url_for('/', error= error_message))
@@ -45,12 +55,12 @@ def create_account():
         return redirect(url_for('register', error = error_message))
 
     query = "SELECT * FROM users WHERE email = %s"
-    value = (email)
+    value = (email, )
     dbc.execute(query, value)
     used_email = dbc.fetchone()
 
     query = "SELECT * FROM users WHERE username = %s"
-    value = (username)
+    value = (username, )
     dbc.execute(query, value)
     used_username = dbc.fetchone()
 
@@ -69,7 +79,7 @@ def create_account():
     query = "INSERT INTO users (name, username, email, password) VALUES (%s, %s, %s, %s)"
     values = (name, username, email, password)
     dbc.execute(query, values)
-    return redirect(url_for('/after'))
+    return redirect(url_for('after'))
 
 
 

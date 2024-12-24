@@ -1,0 +1,87 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Login_Tour",
+  "steps": [
+    {
+      "file": "main.py",
+      "description": "Importing flask and database",
+      "line": 1
+    },
+    {
+      "file": "main.py",
+      "description": "Creating an application to run flask",
+      "line": 4
+    },
+    {
+      "file": "main.py",
+      "description": "Giving index.html(signin page) as default",
+      "line": 7
+    },
+    {
+      "file": "main.py",
+      "description": "After creating an account or signing in user is redirected to after.html",
+      "line": 14
+    },
+    {
+      "file": "main.py",
+      "description": "If user doesn't have account he/she is redirected to register.html",
+      "line": 22
+    },
+    {
+      "file": "main.py",
+      "description": "If the user does have an account he/she can signin in \"index.html\" and there the info about the account is checked",
+      "line": 29
+    },
+    {
+      "file": "main.py",
+      "description": "There the new user can be added",
+      "line": 45
+    },
+    {
+      "file": "main.py",
+      "description": "This is for running the application",
+      "line": 86
+    },
+    {
+      "file": "db_connect.py",
+      "description": "Importing mysql.connector",
+      "line": 1
+    },
+    {
+      "file": "db_connect.py",
+      "description": "Connecting to the database",
+      "line": 4
+    },
+    {
+      "file": "templates/index.html",
+      "description": "Linked style.css file to the index.html file",
+      "line": 6
+    },
+    {
+      "file": "templates/index.html",
+      "description": "Checking for error, if error is appeared then it will be shown",
+      "line": 14
+    },
+    {
+      "file": "templates/index.html",
+      "description": "Creating a form to take information about the user",
+      "line": 17
+    },
+    {
+      "file": "templates/register.html",
+      "description": "Checking for error",
+      "line": 14
+    },
+    {
+      "file": "templates/register.html",
+      "description": "Creating a form",
+      "line": 17
+    },
+    {
+      "file": "templates/after.html",
+      "description": "Message that will be shown after registration",
+      "line": 12
+    }
+  ],
+  "ref": "master"
+}
